@@ -1,0 +1,17 @@
+#contentContainer {
+    position:relative;
+    display:flex;
+    height: 100vh;
+}
+
+#reservations {
+    position: absolute;
+    top: 50px;
+    right: 12vw;
+}
+
+#details {
+    position: absolute;
+    left: 12vw;
+    width: 44vw;
+}
