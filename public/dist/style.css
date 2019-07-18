@@ -15,3 +15,112 @@
     left: 12vw;
     width: 44vw;
 }
+
+@media (min-width: 744px) {
+    #navbar {
+        height: 81px !important;
+    }
+}
+#navbar {
+    width: 100% !important;
+    height: 64px !important;
+}
+
+@media (min-width: 744px) {
+    #banner {
+        position: relative !important;
+        z-index: -100 !important;
+    }
+}
+    
+header {
+    font-weight: 600;
+}
+    
+#navbarContainer {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 0 #EBEBEB !important;
+    -webkit-transition-duration: 200ms !important;
+    transition-duration: 200ms !important;
+    -webkit-transition-property: background-color, box-shadow !important;
+    -moz-transition-property: background-color, box-shadow !important;
+    transition-property: background-color, box-shadow !important;
+    -webkit-transition-timing-function: ease-out !important;
+    transition-timing-function: ease-out !important;
+}
+
+
+#navbarTable {
+    display: table !important;
+    width: 100% !important;
+    border-spacing: 0px !important;
+}
+
+.iconTable {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+.iconRelative {
+    position: relative !important;
+    z-index: 20 !important;
+}
+
+.iconClick {
+    display: table-cell !important;
+}
+
+@media (min-width: 744px) {
+    .iconPadding {
+        height: 80px !important;
+    }
+}
+.iconPadding {
+    display: table-cell !important;
+    height: 64px !important;
+    position: relative !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    -webkit-transition: 0.25s color !important;
+    -moz-transition: 0.25s color !important;
+    transition: 0.25s color !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    vertical-align: middle !important;
+    white-space: nowrap !important;
+}
+
+.iconBlock {
+    display: inline-block !important;
+}
+
+.iconAlign {
+    color: #FF5A5F !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    font-size: 34px !important;
+    -webkit-transition: 0.25s color !important;
+    -moz-transition: 0.25s color !important;
+    transition: 0.25s color !important;
+}
+
+.iconBackground {
+    background-color: #ffffff !important;
+    bottom: 0px !important;
+    height: 100% !important;
+    left: 0px !important;
+    position: fixed !important;
+    right: 0px !important;
+    top: 0px !important;
+    z-index: 10 !important;
+    -webkit-transform: translateY(-100%) !important;
+    -ms-transform: translateY(-100%) !important;
+    transform: translateY(-100%) !important;
+    -webkit-transition-duration: 0.2s !important;
+    transition-duration: 0.2s !important;
+    -webkit-transition-property: -webkit-transform,transform !important;
+    -moz-transition-property: transform !important;
+    transition-property: -ms-transform,-webkit-transform,transform !important;
+    -webkit-transition-timing-function: ease-out !important;
+    transition-timing-function: ease-out !important;
+}
