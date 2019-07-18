@@ -10,7 +10,7 @@
     right: 12vw;
 }
 
-#details {
+#description {
     position: absolute;
     left: 12vw;
     width: 44vw;
@@ -29,7 +29,6 @@
 @media (min-width: 744px) {
     #banner {
         position: relative !important;
-        z-index: -100 !important;
     }
 }
     
@@ -38,6 +37,10 @@ header {
 }
     
 #navbarContainer {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
     background-color: #ffffff !important;
     box-shadow: 0 1px 0 #EBEBEB !important;
     -webkit-transition-duration: 200ms !important;
@@ -59,6 +62,7 @@ header {
 .iconTable {
     display: table-cell !important;
     vertical-align: middle !important;
+    width: 5vw;
 }
 
 .iconRelative {
@@ -123,4 +127,88 @@ header {
     transition-property: -ms-transform,-webkit-transform,transform !important;
     -webkit-transition-timing-function: ease-out !important;
     transition-timing-function: ease-out !important;
+}
+
+.searchBar {
+    display: table-cell !important;
+    width: 100% !important;
+    vertical-align: middle !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    text-overflow: ellipsis !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+    color: #484848 !important;
+    height: 35px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 0px;
+}
+
+@media (min-width: 1128px) {
+    .searchContainer {
+        left: 80px !important;
+    }
+}
+
+@media (min-width: 744px) {
+    .searchContainer {
+        top: 14px !important;
+        -webkit-transition: width 200ms ease-in !important;
+        -moz-transition: width 200ms ease-in !important;
+        transition: width 200ms ease-in !important;
+        width: 400px !important;
+    }
+}
+
+.searchContainer {
+    display: block !important;
+    position: absolute !important;
+    z-index: 21 !important;
+}
+
+.listContainer {
+    display: table-cell !important;
+    vertical-align: middle !important;
+    width: 450px;
+}
+
+.list {
+    display: table !important;
+    list-style: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.listItem {
+    display: table-cell !important;
+}
+
+.listItemContainer {
+    position: relative !important;
+}
+
+.listButtons {
+    border: hidden;
+}
+
+.listButtons:focus {
+    outline: none;
+}
+
+.buttonText {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    line-height: 1 !important;
+    padding: 8px !important;
+    border-bottom: 2px solid transparent !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
 }

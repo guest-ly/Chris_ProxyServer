@@ -1,13 +1,12 @@
 const express = require('express');
 const httpProxy = require('http-proxy');
 var apiProxy = httpProxy.createProxyServer();
-var reservationsServer = 'http://localhost:3001',
-    detailsServer = 'http://localhost:3000',
-    photosServer = 'http://localhost:3002';
+var reservationsServer = 'http://18.188.235.153',
+    detailsServer = 'http://18.221.218.103',
+    photosServer = 'http://3.14.5.145';
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
-
 const app = express();
 const port = 3003;
 
