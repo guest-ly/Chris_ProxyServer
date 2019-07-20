@@ -16,11 +16,28 @@
     width: 44vw;
 }
 
+@media (max-width: 744px) {
+    #description {
+        position: absolute;
+        top: 60vh;
+        left: 0vw;
+        width: 100vw;
+    }
+}
+
+
 @media (min-width: 744px) {
     #navbar {
         height: 81px !important;
     }
 }
+
+@media (max-width: 744px) {
+    #navbar {
+        display: none;
+    }
+}
+
 #navbar {
     width: 100% !important;
     height: 64px !important;

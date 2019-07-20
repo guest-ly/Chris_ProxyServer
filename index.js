@@ -18,6 +18,10 @@ app.all("/api/listings/photos/:listingID", function(req, res) {
     apiProxy.web(req, res, {target: photosServer});
 });
 
+app.all("/api/listings/photos/initial/:listingID", function(req, res) {
+    apiProxy.web(req, res, {target: photosServer});
+});
+
 app.all("/listing/:listingID", function(req, res) {
     apiProxy.web(req, res, {target: reservationsServer});
 });
